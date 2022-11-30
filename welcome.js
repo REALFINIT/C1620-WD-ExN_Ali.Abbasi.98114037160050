@@ -1,4 +1,5 @@
-alert("welcome");
+//using a seprated script for welcome the user and a theme change action
+alert("welcome");                                           
 var personname = prompt("what's your name?");
     if (personname != null) {
     document.getElementById("name").innerHTML =
@@ -9,4 +10,5 @@ function themefunc() {
       document.getElementById("themeask").innerHTML =
       "which color do you perfer?";
     }
+  
   }
