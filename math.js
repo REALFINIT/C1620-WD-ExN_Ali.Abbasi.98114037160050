@@ -15,3 +15,12 @@ function equal()
     alert((d>50));
     document.getElementById("equ").innerHTML = "No! 33 isn't Higher than 50";
 }
+function salary()
+{
+    var H , P , Res;
+    H = prompt("how many hours did you work?");
+    P = prompt("put payment of one hour:");
+    Res = H * P ;
+    alert (Res);
+    document.getElementById("sala").innerHTML = "You earned :" + Res;
+}
