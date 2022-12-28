@@ -9,6 +9,23 @@
         var date = Date();
         document.write(date);
     </script>
+    <style>
+        .btn{
+            width: 65px;
+            height: 50px;
+            font-size: 12px;
+            margin: 2px;
+            cursor: pointer;
+            background-color: rgb(17, 129, 182);
+            color: white;
+        }
+        h1 {
+            text-align: center;
+            padding: 23px;
+            background-color: rgb(72, 19, 77);
+            color: white;
+        }
+    </style>
 </head>
 <body id="body" bgcolor="#292f6e" text="white">
     <div  align="center">
@@ -16,17 +33,18 @@
         <marquee behavior=alternate width=”100” direction=”left” scrolldelay=”5”>
             <img src="welcome.gif">            
         </marquee>
-        <h3 id="themeask">Do you want to take a minute to personalize this site to your own theme?  <button id="themeclk" onclick="themefunc()">Yes</button><button>No</button></h3>
+        <h3 id="themeask">Do you want to take a minute to personalize this site to your own theme?  <button class = "btn" id="themeclk" onclick="themefunc()">Yes</button><button class = "btn">No</button></h3>
     </div>
     <div id="color plate" align="center">
     </div>
         <script src="welcome.js"></script>
     <div id="Mdiv" align="center">
-        <button onclick="Mdivon()">Set border</button>
-        <h1 id="plus">11*2=?  <button onclick="sum()">Result?</button></h1>
-        <h1 id ="equ">we have 33 , is that higher than 50?  <button onclick="equal()">Show</button></h1>   
-        <h1 id="sala">Do you wanna count yor yearly income?  <button ondblclick="salary()">YESYES</button></h1>
+        <button class = "btn" onclick="Mdivon()">Set border</button>
+        <h1 id="plus">11*2=?  <button class = "btn" onclick="sum()">Result?</button></h1>
+        <h1 id ="equ">we have 33 , is that higher than 50?  <button class = "btn" onclick="equal()">Show</button></h1>   
+        <h1 id="sala">Do you wanna count yor yearly income?  <button class = "btn" ondblclick="salary()">YESYES</button></h1>
         <script src="math.js"></script>
     </div>
+    <h1>Let calculate your BMI ---></h1><button class="btn" onclick="bmi()">Start</button>
 </body>
 </html>

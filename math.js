@@ -24,3 +24,12 @@ function salary()
     alert (Res);
     document.getElementById("sala").innerHTML = "You earned :" + Res;
 }
+function bmi()
+{
+    var height , Weight , bm ;
+    height = prompt("please put your height:");
+    Weight = prompt("please enter your weight:");
+    bm = Weight / (height * height);
+    alert (bm);
+     
+}
