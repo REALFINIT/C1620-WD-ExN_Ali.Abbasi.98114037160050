@@ -31,5 +31,8 @@ function bmi()
     Weight = prompt("please enter your weight:");
     bm = Weight / (height * height);
     alert (bm);
-     
+    
+}
+if ( bm <= "18.5") {
+    document.getElementById("bmical").innerHTML = bm + "Your bmi is too low my friend :(";
 }
