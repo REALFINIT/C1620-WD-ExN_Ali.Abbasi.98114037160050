@@ -1,7 +1,7 @@
 //a seprate script for examples of mathematical code
 function Mdivon()
 {   //using *getelement* for changing Math div dorder style
-    document.getElementById("Mdiv").style.border = "thick solid #0000FF"; 
+    document.getElementById("Mdiv").style.border = "thick solid #48134d"; 
 }
 function sum()
 {   //making variables to do math
@@ -11,9 +11,13 @@ function sum()
 }
 function equal()
 {   //Boolean type result
-    var d = 33
-    alert((d>50));
-    document.getElementById("equ").innerHTML = "No! 33 isn't Higher than 50";
+    alert("33>50");
+    document.getElementById("equ").innerHTML = "No! 33 isn't grater than 50.";
+}
+function equal2()
+{
+    alert("33>50");
+    document.getElementById("equ").innerHTML = "Exactly , it's less than 50."
 }
 function salary()
 {

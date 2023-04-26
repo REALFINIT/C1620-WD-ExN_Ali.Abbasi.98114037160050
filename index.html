@@ -10,30 +10,54 @@
         document.write(date);
     </script>
     <style>
+        .htyle{
+            width: 600px;
+            height: 600px;
+            margin: 20px auto;
+            border: 3px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            background-color: rgb(72, 19, 77);
+            border:2px solid rgb(0, 0, 0);
+        }
         .btn{
-            width: 65px;
+            width: 90px;
             height: 50px;
             font-size: 12px;
             margin: 2px;
             cursor: pointer;
             background-color: rgb(17, 129, 182);
             color: white;
+            border-radius: 20;
+            
         }
         h1 {
+            width: 900px;
             text-align: center;
             padding: 23px;
-            background-color: rgb(72, 19, 77);
+            font-size: 55px;
+            background-color: #48134d;
             color: white;
+            border-radius: 30px;
+            border-color: black;
+            border-width: 50px;
+
+        }
+        .h3bor{
+            font-size: 25px;
+          
         }
     </style>
 </head>
-<body id="body" bgcolor="#292f6e" text="white">
+<body id="body" >
+    <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
     <div  align="center">
         <h1 id="name">Hi every one!</h1>
         <marquee behavior=alternate width=”100” direction=”left” scrolldelay=”5”>
             <img src="welcome.gif">            
         </marquee>
-        <h3 id="themeask">Do you want to take a minute to personalize this site to your own theme?  <button class = "btn" id="themeclk" onclick="themefunc()">Yes</button><button class = "btn">No</button></h3>
+        <h3 class="h3bor" id="themeask">Do you want to take a minute to personalize this site to your own theme?  <button class = "btn" id="themeclk" onclick="themefunc()">Yes</button><button class = "btn">No</button></h3>
     </div>
     <div id="color plate" align="center">
     </div>
@@ -41,10 +65,12 @@
     <div id="Mdiv" align="center">
         <button class = "btn" onclick="Mdivon()">Set border</button>
         <h1 id="plus">11*2=?  <button class = "btn" onclick="sum()">Result?</button></h1>
-        <h1 id ="equ">we have 33 , is that higher than 50?  <button class = "btn" onclick="equal()">Show</button></h1>   
-        <h1 id="sala">Do you wanna count yor yearly income?  <button class = "btn" ondblclick="salary()">YESYES</button></h1>
+        <h1 id ="equ">we have 33 , is that higher than 50?  <button class = "btn" onclick="equal()">Yes</button><button class = "btn" onclick="equal2()">No</button></h1>   
+        <h1 id="sala">Do you wanna count yor yearly income?  <button title="double click" class = "btn" ondblclick="salary()">YESYES</button></h1>
         <script src="math.js"></script>
     </div>
-    <h1 id="bmical">Let calculate your BMI ---><button class="btn" onclick="bmi()">Start</button></h1>
+    <div class="htyle">
+    <h2 id="bmical">Let calculate your BMI ---><button class="btn" onclick="bmi()">Start</button></h2>
+    </div>
 </body>
 </html>
